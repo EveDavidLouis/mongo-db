@@ -9,8 +9,8 @@ RUN mkdir -p /data/ \
 
 USER david
 
-CMD [ "mongod", "-f", "/etc/mongod.conf" ]
+CMD ["mongod", "-f", "/etc/mongod.conf" ]
 
 EXPOSE 27017
 
-VOLUME /data
+VOLUME ["/data/db"]
